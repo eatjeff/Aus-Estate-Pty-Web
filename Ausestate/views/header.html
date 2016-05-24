@@ -1,0 +1,73 @@
+
+
+    
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" ui-sref="app">
+                        <img src="img/logo.png" class="logo"></img>
+                    </a>
+            </div>
+            <div id="navbar" class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a ui-sref="app.homesearch"><span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                        Home</a></li>
+                    <li><a class="dropdown-toggle" type="button" id="dropdownMenubuy" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-usd" aria-hidden="true"></span>Buy<span class="caret"></span></a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenubuy">
+                            <li><a ui-sref="app.residential">Residential</a>
+                            </li>
+                            <li><a ui-sref="app.commercial">Commercial</a></li>
+                            <li><a ui-sref="app.openinspection">Open Inspection</a>
+                            </li>
+                            <li><a ui-sref="app.auction">Auction</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><a class="dropdown-toggle" id="dropdownMenubrowse" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" ><span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+                      Browse
+                      <span class="caret"></span>
+                      </a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdownMenubrowse">
+                            <li><a ui-sref="app.residential">Residential</a>
+                            </li>
+                            <li><a ui-sref="app.commercial">Commercial</a></li>
+                            <li><a ui-sref="app.openinspection">Open Inspection</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown"
+                         role="button" aria-haspopup="true" aria-expanded="false">
+                         <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span>
+                          Type <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a ui-sref="app.residential">Residential</a></li>
+                            <li><a ui-sref="app.commercial">Commercial</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a ui-sref="app.newdevelopments">New Development</a></li>
+                        </ul>
+                    </li>
+                    <li><a ui-sref="app.news"><span class="glyphicon glyphicon-bell" aria-hidden="true"></span> News</a></li>
+                    <li><a ui-sref="app.aboutus"><span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+                        About Us</a></li>
+                    <li><a ui-sref="app.contactus"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact Us</a></li>
+                    
+                    
+                    <button type="button" id="signin" class="btn navbar-btn navbar-right singin" ui-sref="app.login" ng-hide="currentUser">Staff SignIn</button>
+                    <button type="button" id="signin" class="btn navbar-btn navbar-right singin" ui-sref="app.agentLogin" ng-hide="currentAgent" ng-hide="currentUser">Agent SignIn</button>
+
+                </ul>
+            </div>
+        </div>
+    </nav>  
+
+   
+
+    
+    
